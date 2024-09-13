@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fog City Bike offers the best bike rentals and guided tours in San Francisco. Discover the Golden Gate Bridge, Fisherman's Wharf, and more!">
+    <title>Fog City Bike | Bike Rentals & Tours in San Francisco</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Fog City Bike Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#rentals">Bike Rentals</a></li>
+                <li><a href="#tours">Guided Tours</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="book-now.html" class="book-btn">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Explore San Francisco by Bike</h1>
+            <p>Experience the best bike rentals and guided tours across the Golden Gate Bridge and through the city's landmarks.</p>
+            <a href="book-now.html" class="cta-btn">Book Your Adventure</a>
+        </div>
+    </section>
+
+    <!-- Bike Rentals Section -->
+    <section id="rentals">
+        <h2>Bike Rentals</h2>
+        <p>Choose from a variety of top-quality bikes, perfect for exploring the scenic routes of San Francisco.</p>
+        <div class="rental-options">
+            <div class="rental-item">
+                <img src="images/hybrid-bike.jpg" alt="Hybrid Bike">
+                <h3>Hybrid Bike</h3>
+                <p>Perfect for city streets and bike paths.</p>
+                <a href="book-now.html" class="rent-btn">Rent Now</a>
+            </div>
+            <div class="rental-item">
+                <img src="images/electric-bike.jpg" alt="Electric Bike">
+                <h3>Electric Bike</h3>
+                <p>Explore the city with ease on an electric bike.</p>
+                <a href="book-now.html" class="rent-btn">Rent Now</a>
+            </div>
+            <div class="rental-item">
+                <img src="images/kids-bike.jpg" alt="Kids Bike">
+                <h3>Kids Bike</h3>
+                <p>Family-friendly bikes for your little ones.</p>
+                <a href="book-now.html" class="rent-btn">Rent Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guided Tours Section -->
+    <section id="tours">
+        <h2>Guided Bike Tours</h2>
+        <p>Join our guided bike tours for a unique experience of San Francisco’s most iconic landmarks.</p>
+        <div class="tour-options">
+            <div class="tour-item">
+                <h3>Golden Gate Bridge Tour</h3>
+                <p>Ride across the iconic Golden Gate Bridge and take in the stunning views of the bay.</p>
+                <a href="book-now.html" class="tour-btn">Book Tour</a>
+            </div>
+            <div class="tour-item">
+                <h3>Fisherman’s Wharf & Waterfront</h3>
+                <p>Explore San Francisco’s historic waterfront and vibrant Fisherman’s Wharf.</p>
+                <a href="book-now.html" class="tour-btn">Book Tour</a>
+            </div>
+            <div class="tour-item">
+                <h3>Golden Gate Park</h3>
+                <p>Discover the beauty of Golden Gate Park, full of lush gardens and hidden gems.</p>
+                <a href="book-now.html" class="tour-btn">Book Tour</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Fog City Bike</h2>
+        <p>Fog City Bike is proud to offer premium bike rentals and guided tours in San Francisco. Our goal is to provide visitors and locals with the best biking experience in the city. Whether you're exploring the Golden Gate Bridge or the hidden corners of Golden Gate Park, our team is here to make your adventure memorable.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have any questions? Reach out to us!</p>
+        <form action="contact-form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Fog City Bike | <a href="privacy-policy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

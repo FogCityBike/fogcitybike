@@ -6,12 +6,16 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f5f5f5;
     color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 h1, h2, h3 {
     font-family: 'Raleway', sans-serif;
     color: #222;
 }
+
 /* Video Background */
 .video-background {
     position: fixed;
@@ -53,14 +57,15 @@ section {
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background to improve readability */
     color: white;
     margin-bottom: 20px;
+    backdrop-filter: blur(5px); /* Optional: Adds a subtle blur effect to the background */
 }
 
 /* Footer */
 footer {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
 }
-
 
 /* 3. Button Styles */
 .btn {
@@ -68,7 +73,8 @@ footer {
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
-    transition: 0.3s;
+    transition: background-color 0.3s;
+    text-decoration: none;
 }
 
 .btn:hover {
@@ -88,15 +94,20 @@ footer {
 /* 5. Review Carousel Styles */
 .review-carousel {
     display: flex;
+    justify-content: space-between;
     overflow: hidden;
     width: 100%;
     padding: 20px;
+    gap: 20px;
 }
 
 .review {
-    width: 100%;
+    flex: 1;
     padding: 10px;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(5px); /* Optional: Add blur effect to the carousel items */
 }
 
 .review p {

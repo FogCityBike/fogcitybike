@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fog City Bike</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Fog City Bike - Experience San Francisco like never before with our bike rentals and guided tours.">
+    <meta name="keywords" content="San Francisco, bike rentals, guided tours, Fog City Bike, Golden Gate tours">
+    
     <!-- Google Fonts Link -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    
     <!-- Link to Your CSS File -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -13,10 +18,10 @@
 
     <!-- Background Video -->
     <div class="video-background">
-        <video autoplay muted loop playsinline>
+        <video autoplay muted loop playsinline poster="images/fallback.jpg">
             <source src="videos/background.mp4" type="video/mp4">
-             <source src="videos/IMG_0726.webm" type="video/webm">
-            Your browser does not support the video tag.
+            <source src="videos/background.webm" type="video/webm">
+            <p>Your browser does not support HTML5 video. Here is a <a href="videos/background.mp4">link to the video</a> instead.</p>
         </video>
     </div>
 
@@ -28,7 +33,7 @@
         <div class="slogan">
             <p>Your Adventure Awaits</p>
         </div>
-        <nav>
+        <nav aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="rentals.html">Bike Rentals</a></li>
@@ -40,20 +45,20 @@
     </header>
 
     <!-- Main Content -->
-    <div class="content">
+    <main>
         <section id="rentals">
             <h2>Our Bike Rentals</h2>
             <div class="rental-options">
                 <div class="rental-item">
-                    <img src="images/hybrid-bike.jpg" alt="Hybrid Bike">
+                    <img src="images/hybrid-bike.jpg" alt="Hybrid Bike" loading="lazy">
                     <h3>Hybrid Bike</h3>
                 </div>
                 <div class="rental-item">
-                    <img src="images/electric-bike.jpg" alt="Electric Bike">
+                    <img src="images/electric-bike.jpg" alt="Electric Bike" loading="lazy">
                     <h3>Electric Bike</h3>
                 </div>
                 <div class="rental-item">
-                    <img src="images/kids-bike.jpg" alt="Kids Bike">
+                    <img src="images/kids-bike.jpg" alt="Kids Bike" loading="lazy">
                     <h3>Kids Bike</h3>
                 </div>
             </div>
@@ -63,15 +68,15 @@
             <h2>Guided Tours</h2>
             <div class="tour-options">
                 <div class="tour-item">
-                    <img src="images/goldengate-tour.jpg" alt="Golden Gate Bridge Tour">
+                    <img src="images/goldengate-tour.jpg" alt="Golden Gate Bridge Tour" loading="lazy">
                     <h3>Golden Gate Bridge Tour</h3>
                 </div>
                 <div class="tour-item">
-                    <img src="images/fishermanswharf-tour.jpg" alt="Fisherman's Wharf Tour">
+                    <img src="images/fishermanswharf-tour.jpg" alt="Fisherman's Wharf Tour" loading="lazy">
                     <h3>Fisherman's Wharf Tour</h3>
                 </div>
                 <div class="tour-item">
-                    <img src="images/golden-gate-park-tour.jpg" alt="Golden Gate Park Tour">
+                    <img src="images/golden-gate-park-tour.jpg" alt="Golden Gate Park Tour" loading="lazy">
                     <h3>Golden Gate Park Tour</h3>
                 </div>
             </div>
@@ -102,14 +107,14 @@
 
         <section id="leave-review">
             <h2>Leave Your Review</h2>
-            <form class="review-form">
-                <input type="text" name="name" placeholder="Your Name" required />
-                <input type="email" name="email" placeholder="Your Email (optional)" />
-                <textarea name="review" placeholder="Your Review" required></textarea>
+            <form class="review-form" aria-labelledby="leave-review">
+                <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name" />
+                <input type="email" name="email" placeholder="Your Email (optional)" aria-label="Your Email" />
+                <textarea name="review" placeholder="Your Review" required aria-label="Your Review"></textarea>
                 <button type="submit" class="btn">Submit Review</button>
             </form>
         </section>
-    </div>
+    </main>
 
     <!-- Footer -->
     <footer>

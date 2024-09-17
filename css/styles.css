@@ -149,3 +149,100 @@ footer {
     font-family: 'Raleway', sans-serif;
     color: #ff6b6b;
 }
+/* Mobile First - Base Styles */
+
+/* Small screens (phones, portrait mode) */
+@media (max-width: 600px) {
+    /* Adjustments for mobile devices */
+    header, section {
+        padding: 50px 10px; /* Reduce padding */
+    }
+
+    .logo img {
+        max-width: 100px; /* Reduce logo size on mobile */
+    }
+
+    .content {
+        padding: 20px 10px; /* Reduce content padding */
+    }
+
+    /* Make the video height responsive */
+    .video-background {
+        height: auto; /* Allow video to adjust based on content */
+    }
+
+    .video-background video {
+        min-width: 100%;
+        min-height: auto;
+        transform: none; /* Remove the transform for mobile */
+    }
+
+    /* Adjust button size */
+    .btn {
+        padding: 8px 16px; /* Smaller buttons on mobile */
+        font-size: 14px;
+    }
+
+    /* Adjust carousel layout */
+    .review-carousel {
+        flex-direction: column;
+    }
+
+    .review {
+        margin-bottom: 20px; /* Add space between reviews */
+    }
+
+    .parallax {
+        height: 300px; /* Reduce height for parallax on mobile */
+    }
+}
+
+/* Medium screens (tablets, landscape phones) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header, section {
+        padding: 80px 15px; /* Adjust padding for tablet */
+    }
+
+    .logo img {
+        max-width: 120px; /* Slightly smaller logo */
+    }
+
+    .content {
+        padding: 30px 15px;
+    }
+
+    .video-background {
+        height: 60vh; /* Set video height to 60% of viewport */
+    }
+
+    .parallax {
+        height: 400px; /* Adjust parallax height for tablets */
+    }
+
+    /* Button adjustments */
+    .btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1025px) {
+    /* No major changes here unless needed */
+    .logo img {
+        max-width: 150px; /* Full-size logo */
+    }
+
+    .video-background {
+        height: 100vh; /* Full screen height for video on large screens */
+    }
+
+    .parallax {
+        height: 500px;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        font-size: 18px;
+    }
+}

@@ -4,24 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fog City Bike</title>
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Fog City Bike - Experience San Francisco like never before with our bike rentals and guided tours.">
-    <meta name="keywords" content="San Francisco, bike rentals, guided tours, Fog City Bike, Golden Gate tours">
-    
     <!-- Google Fonts Link -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    
     <!-- Link to Your CSS File -->
     <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        /* Reset for body and images */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        img {
+            max-width: 100%; /* Ensures images don't overflow the container */
+            height: auto; /* Maintains the aspect ratio */
+            display: block; /* Removes bottom space/gap */
+            margin: 0 auto; /* Center images if in a container */
+        }
+
+        .container {
+            width: 90%; /* Container width */
+            margin: 0 auto; /* Center the container */
+            padding: 20px; /* Add some padding */
+        }
+
+        .rental-options {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .rental-item {
+            flex: 1 1 30%; /* Make each rental item take up 30% of the container width */
+            margin-bottom: 20px;
+            text-align: center; /* Center text below images */
+        }
+
+        @media (max-width: 768px) {
+            .rental-item {
+                flex: 1 1 45%; /* On tablets, make each item take up 45% of the container width */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .rental-item {
+                flex: 1 1 100%; /* On mobile, make each item take up the full width */
+            }
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 
     <!-- Background Video -->
     <div class="video-background">
         <video autoplay muted loop playsinline poster="images/fallback.jpg">
-            <source src="videos/background.mp4" type="video/mp4">
-            <source src="videos/background.webm" type="video/webm">
-            <p>Your browser does not support HTML5 video. Here is a <a href="videos/background.mp4">link to the video</a> instead.</p>
+            <source src="videos/IMG_0726.mp4" type="video/mp4">
+            <source src="videos/IMG_0726.webm" type="video/webm">
+            <p>Your browser does not support HTML5 video. Here is a <a href="videos/IMG_0726.mp4">link to the video</a> instead.</p>
         </video>
     </div>
 
@@ -46,74 +92,46 @@
 
     <!-- Main Content -->
     <main>
-        <section id="rentals">
-            <h2>Our Bike Rentals</h2>
+        <!-- Bike Rentals Section -->
+        <section id="rentals" class="container">
+            <h1>Our Bike Rentals</h1>
+            <p>Choose from a variety of bikes:</p>
             <div class="rental-options">
                 <div class="rental-item">
-                    <img src="images/hybrid-bike.jpg" alt="Hybrid Bike" loading="lazy">
+                    <img src="images/hybrid-bike.jpg" alt="Hybrid Bike">
                     <h3>Hybrid Bike</h3>
                 </div>
                 <div class="rental-item">
-                    <img src="images/electric-bike.jpg" alt="Electric Bike" loading="lazy">
+                    <img src="images/electric-bike.jpg" alt="Electric Bike">
                     <h3>Electric Bike</h3>
                 </div>
                 <div class="rental-item">
-                    <img src="images/kids-bike.jpg" alt="Kids Bike" loading="lazy">
+                    <img src="images/kids-bike.jpg" alt="Kids Bike">
                     <h3>Kids Bike</h3>
                 </div>
             </div>
         </section>
 
-        <section id="tours">
+        <!-- Guided Tours Section -->
+        <section id="tours" class="container">
             <h2>Guided Tours</h2>
             <div class="tour-options">
                 <div class="tour-item">
-                    <img src="images/goldengate-tour.jpg" alt="Golden Gate Bridge Tour" loading="lazy">
+                    <img src="images/goldengate-tour.jpg" alt="Golden Gate Bridge Tour">
                     <h3>Golden Gate Bridge Tour</h3>
                 </div>
                 <div class="tour-item">
-                    <img src="images/fishermanswharf-tour.jpg" alt="Fisherman's Wharf Tour" loading="lazy">
+                    <img src="images/fishermanswharf-tour.jpg" alt="Fisherman's Wharf Tour">
                     <h3>Fisherman's Wharf Tour</h3>
                 </div>
                 <div class="tour-item">
-                    <img src="images/golden-gate-park-tour.jpg" alt="Golden Gate Park Tour" loading="lazy">
+                    <img src="images/golden-gate-park-tour.jpg" alt="Golden Gate Park Tour">
                     <h3>Golden Gate Park Tour</h3>
                 </div>
             </div>
         </section>
 
-        <section id="tour-map">
-            <h2>Explore Our Routes</h2>
-            <div id="map"></div>
-        </section>
-
-        <section id="reviews">
-            <h2>What Our Customers Say</h2>
-            <div class="review-carousel">
-                <div class="review">
-                    <p>"Amazing Tour! Fog City Bike made our San Francisco visit unforgettable!"</p>
-                    <h4>– Emily R.</h4>
-                </div>
-                <div class="review">
-                    <p>"Best way to see San Francisco! We covered so much ground effortlessly."</p>
-                    <h4>– Mike D.</h4>
-                </div>
-                <div class="review">
-                    <p>"Exceptional service and friendly staff. We'll definitely be back!"</p>
-                    <h4>– Sarah L.</h4>
-                </div>
-            </div>
-        </section>
-
-        <section id="leave-review">
-            <h2>Leave Your Review</h2>
-            <form class="review-form" aria-labelledby="leave-review">
-                <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name" />
-                <input type="email" name="email" placeholder="Your Email (optional)" aria-label="Your Email" />
-                <textarea name="review" placeholder="Your Review" required aria-label="Your Review"></textarea>
-                <button type="submit" class="btn">Submit Review</button>
-            </form>
-        </section>
+        <!-- Other sections like reviews, map, etc. -->
     </main>
 
     <!-- Footer -->

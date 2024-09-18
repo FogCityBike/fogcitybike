@@ -22,7 +22,7 @@ h1, h2, h3 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh; /* Ensure full viewport height */
     z-index: -1;
     overflow: hidden;
 }
@@ -35,7 +35,6 @@ h1, h2, h3 {
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -1;
     transform: translate(-50%, -50%);
     object-fit: cover;
 }
@@ -167,15 +166,14 @@ footer {
         padding: 20px 10px; /* Reduce content padding */
     }
 
-    /* Make the video height responsive */
     .video-background {
-        height: auto; /* Allow video to adjust based on content */
+        height: 100vh; /* Maintain full viewport height */
     }
 
     .video-background video {
         min-width: 100%;
-        min-height: auto;
-        transform: none; /* Remove the transform for mobile */
+        min-height: 100%;
+        transform: none; /* Maintain positioning */
     }
 
     /* Adjust button size */

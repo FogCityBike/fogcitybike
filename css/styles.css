@@ -1,7 +1,7 @@
-/* 1. Google Fonts Import */
+/* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap');
 
-/* 2. General Body and Text Styles */
+/* General Styles */
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f5f5f5;
@@ -22,7 +22,7 @@ h1, h2, h3 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; /* Ensure full viewport height */
+    height: 100vh;
     z-index: -1;
     overflow: hidden;
 }
@@ -39,209 +39,12 @@ h1, h2, h3 {
     object-fit: cover;
 }
 
-/* Content to appear over the video */
-.content {
-    position: relative;
-    z-index: 1;
-    color: white;
+/* Container */
+.container {
+    padding: 60px 20px;
     text-align: center;
 }
 
-header {
-    padding: 100px 20px;
-}
-
-section {
-    padding: 100px 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background to improve readability */
-    color: white;
-    margin-bottom: 20px;
-    backdrop-filter: blur(5px); /* Optional: Adds a subtle blur effect to the background */
-}
-
-/* Footer */
-footer {
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    text-align: center;
-}
-
-/* 3. Button Styles */
-.btn {
-    background-color: #ff6b6b;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background-color: #ff8787;
-}
-
-/* 4. Parallax Effect */
-.parallax {
-    background-image: url('your-background.jpg');
-    height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* 5. Review Carousel Styles */
-.review-carousel {
+.rental-options, .tour-options {
     display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-    width: 100%;
-    padding: 20px;
-    gap: 20px;
-}
-
-.review {
-    flex: 1;
-    padding: 10px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    backdrop-filter: blur(5px); /* Optional: Add blur effect to the carousel items */
-}
-
-.review p {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.review h4 {
-    font-weight: bold;
-    margin-top: 10px;
-    font-size: 1em;
-}
-
-/* 6. Animation Styles */
-.animate {
-    animation: fadeInUp 1.5s ease-in-out;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* 7. Slogan Section Styles */
-.slogan {
-    text-align: center;
-    font-size: 2em;
-    margin: 20px 0;
-    animation: fadeInUp 2s ease-in-out;
-}
-
-.slogan p {
-    font-family: 'Raleway', sans-serif;
-    color: #ff6b6b;
-}
-
-/* Mobile First - Base Styles */
-
-/* Small screens (phones, portrait mode) */
-@media (max-width: 600px) {
-    /* Adjustments for mobile devices */
-    header, section {
-        padding: 50px 10px; /* Reduce padding */
-    }
-
-    .logo img {
-        max-width: 100px; /* Reduce logo size on mobile */
-    }
-
-    .content {
-        padding: 20px 10px; /* Reduce content padding */
-    }
-
-    .video-background {
-        height: 100vh; /* Maintain full viewport height */
-    }
-
-    .video-background video {
-        min-width: 100%;
-        min-height: 100%;
-        transform: none; /* Maintain positioning */
-    }
-
-    /* Adjust button size */
-    .btn {
-        padding: 8px 16px; /* Smaller buttons on mobile */
-        font-size: 14px;
-    }
-
-    /* Adjust carousel layout */
-    .review-carousel {
-        flex-direction: column;
-    }
-
-    .review {
-        margin-bottom: 20px; /* Add space between reviews */
-    }
-
-    .parallax {
-        height: 300px; /* Reduce height for parallax on mobile */
-    }
-}
-
-/* Medium screens (tablets, landscape phones) */
-@media (min-width: 601px) and (max-width: 1024px) {
-    header, section {
-        padding: 80px 15px; /* Adjust padding for tablet */
-    }
-
-    .logo img {
-        max-width: 120px; /* Slightly smaller logo */
-    }
-
-    .content {
-        padding: 30px 15px;
-    }
-
-    .video-background {
-        height: 60vh; /* Set video height to 60% of viewport */
-    }
-
-    .parallax {
-        height: 400px; /* Adjust parallax height for tablets */
-    }
-
-    /* Button adjustments */
-    .btn {
-        padding: 10px 20px;
-        font-size: 16px;
-    }
-}
-
-/* Large screens (desktops) */
-@media (min-width: 1025px) {
-    /* No major changes here unless needed */
-    .logo img {
-        max-width: 150px; /* Full-size logo */
-    }
-
-    .video-background {
-        height: 100vh; /* Full screen height for video on large screens */
-    }
-
-    .parallax {
-        height: 500px;
-    }
-
-    .btn {
-        padding: 12px 24px;
-        font-size: 18px;
-    }
-}
+    flex-wrap: wrap;

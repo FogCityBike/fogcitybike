@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fog City Bike</title>
     <!-- Google Fonts Link -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
@@ -11,8 +10,8 @@
 </head>
 <body>
 
-    <!-- Background Video -->
-    <div class="video-background">
+    <!-- Video Background -->
+    <div class="video-background" id="video-background">
         <video autoplay muted loop playsinline poster="images/fallback.jpg">
             <source src="videos/background.mp4" type="video/mp4">
             <source src="videos/background.webm" type="video/webm">
@@ -20,111 +19,57 @@
         </video>
     </div>
 
-    <!-- Header with Logo and Navigation -->
-    <header>
-        <div class="logo">
-            <img src="images/logo.jpg" alt="Fog City Bike Logo">
-        </div>
-        <div class="slogan">
-            <p>Your Adventure Awaits</p>
-        </div>
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="rentals.html">Self-Guided Tours</a></li>
-                <li><a href="tours.html">Guided Tours</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <!-- Self-Guided Bike Rentals Section -->
-        <section id="rentals" class="container">
-            <h2>Self-Guided Tours</h2>
-            <p>Explore San Francisco at your own pace with our high-quality bikes. All rentals include locks, maps, helmets, and free rescue service in case of a flat tire. Enjoy the breathtaking beauty of the Golden Gate Bridge, ride along the waterfront, or venture into scenic neighborhoods.</p>
-            <div class="rental-options">
-                <div class="rental-item">
-                    <img src="images/city-bike.jpg" alt="City Bike">
-                    <p>City Bike: $18 for 2 hours, $38 for the day</p>
-                </div>
-                <div class="rental-item">
-                    <img src="images/sport-bike.jpg" alt="Sport Bike">
-                    <p>Sport Bike: $28 for 2 hours, $48 for the day</p>
-                </div>
-                <div class="rental-item">
-                    <img src="images/electric-bike.jpg" alt="Electric Bike">
-                    <p>E-bike: $48 for 2 hours, $78 for the day</p>
-                </div>
-                <div class="rental-item">
-                    <img src="images/carbon-road-bike.jpg" alt="Carbon Road Bike">
-                    <p>Specialized Carbon Road Bike: $98 per day</p>
-                </div>
-                <div class="rental-item">
-                    <img src="images/aluminum-road-bike.jpg" alt="Aluminum Road Bike">
-                    <p>Specialized Aluminum Road Bike: $78 per day</p>
-                </div>
-                <div class="rental-item">
-                    <img src="images/kids-bike.jpg" alt="Kids Bike">
-                    <p>Kids Bike & Accessories: $18 for the day</p>
-                </div>
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+        <!-- Header with Logo and Navigation -->
+        <header>
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Fog City Bike Logo">
             </div>
-        </section>
-
-        <!-- Guided Tours Section -->
-        <section id="tours" class="container">
-            <h2>Guided Tours</h2>
-            <p>Discover San Francisco’s iconic landmarks with a local guide. All tours include the bike for the day once the tour is done. Experience the beauty of the Golden Gate Bridge, the historic streets of Fisherman’s Wharf, and more.</p>
-            <div class="rental-options">
-                <div class="rental-item">
-                    <img src="images/goldengate-tour.jpg" alt="Golden Gate Bridge Tour">
-                    <p>Golden Gate Bridge to Sausalito (City Bike): $68</p>
-                </div>
-                <div class="rental-item">
-                    <img src="images/goldengate-tour.jpg" alt="Golden Gate Bridge Tour">
-                    <p>Golden Gate Bridge to Sausalito (E-bike): $98</p>
-                </div>
-                <div class="rental-item">
-                    <img src="images/goldengate-tour.jpg" alt="Golden Gate Bridge Tour">
-                    <p>Golden Gate Bridge to Sausalito (Kids Bike): $38</p>
-                </div>
-                <div class="rental-item">
-                    <img src="images/streets-sf-tour.jpg" alt="Streets of SF Tour">
-                    <p>Streets of San Francisco (E-bike only): $108</p>
-                </div>
-                <div class="rental-item">
-                    <img src="images/muir-woods-tour.jpg" alt="Muir Woods Tour">
-                    <p>Muir Woods Private Tour (max 6 people): $138 per person</p>
-                </div>
+            <div class="slogan">
+                <p>Your Adventure Awaits</p>
             </div>
-        </section>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rentals.html">Self-Guided Tours</a></li>
+                    <li><a href="tours.html">Guided Tours</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <!-- Combo Tours Section -->
-        <section id="combo-tours" class="container">
-            <h2>Combo Tours</h2>
-            <p>We offer a range of combo tours that pair your bike ride with additional adventures:</p>
-            <ul>
-                <li>Big Bus Tours</li>
-                <li>Love Tours</li>
-                <li>Wine Tours</li>
-                <li>Muir Woods Tours</li>
-            </ul>
-        </section>
+        <!-- Main Content -->
+        <main>
+            <!-- Self-Guided Bike Rentals Section -->
+            <section id="rentals" class="container">
+                <!-- Your content goes here -->
+            </section>
 
-        <!-- Group Events and Corporate Team Building -->
-        <section id="group-events" class="container">
-            <h2>Group Events & Corporate Team Building</h2>
-            <p>Looking for a memorable experience for your team or group? Fog City Bike offers customized group events and corporate team-building activities. Call us today for pricing and options to plan your perfect event.</p>
-        </section>
-    </main>
+            <!-- Guided Tours Section -->
+            <section id="tours" class="container">
+                <!-- Your content goes here -->
+            </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Fog City Bike | <a href="privacy-policy.html">Privacy Policy</a></p>
-    </footer>
+            <!-- Combo Tours Section -->
+            <section id="combo-tours" class="container">
+                <!-- Your content goes here -->
+            </section>
 
+            <!-- Group Events and Corporate Team Building -->
+            <section id="group-events" class="container">
+                <!-- Your content goes here -->
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Fog City Bike | <a href="privacy-policy.html">Privacy Policy</a></p>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
     <script src="scripts.js"></script>
 </body>
 </html>

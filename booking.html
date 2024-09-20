@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking - Fog City Bike Tours</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <!-- Same as in index.html -->
+    </nav>
+
+    <h1>Book a Tour</h1>
+
+    <form action="php/process-booking.php" method="POST" class="booking-form">
+        <label for="tour-type">Select Tour:</label>
+        <select name="tour_type" id="tour-type" required>
+            <option value="ggb">Golden Gate Bridge Tour</option>
+            <option value="sosf">Streets of San Francisco Tour</option>
+            <option value="self-guided">Self-Guided Tour</option>
+        </select>
+
+        <label for="private-tour">Private Tour:</label>
+        <input type="checkbox" name="private_tour" id="private-tour">
+
+        <label for="tour-date">Select Date:</label>
+        <input type="date" name="tour_date" id="tour-date" required>
+
+        <label for="tour-time">Select Time:</label>
+        <select name="tour_time" id="tour-time" required>
+            <!-- Options will be populated by JavaScript -->
+        </select>
+
+        <label for="participants">Number of Participants:</label>
+        <input type="number" name="participants" id="participants" min="1" required>
+
+        <button type="submit">Confirm Booking</button>
+    </form>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Same as in index.html -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

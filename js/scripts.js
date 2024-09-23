@@ -41,19 +41,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function generateHalfHourTimes(startHour, endHour) {
         const times = [];
-        for (let hour = startHour; hour < endHour; hour++) {
+        for (let hour = startHour; hour <= endHour; hour++) {
             ['00', '30'].forEach(minute => {
+                if (hour === endHour && minute === '30') return;
                 times.push(formatTime(hour, minute));
             });
         }
-        // Add the last time (endHour:00)
-        times.push(formatTime(endHour, '00'));
         return times;
     }
 
     function formatTime(hour, minute) {
         const ampm = hour >= 12 ? 'PM' : 'AM';
-        const formattedHour = ((hour - 1) % 12) + 1; // Converts 0-23 to 12-hour format
+        const formattedHour = hour % 12 || 12;
         return `${formattedHour}:${minute} ${ampm}`;
     }
 

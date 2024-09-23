@@ -9,20 +9,25 @@
 
     <!-- Navigation Bar -->
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="self-guided.html">Self-Guided Tours</a></li>
-            <li><a href="tours.html">Guided Tours</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
-        </ul>
+        <div class="container">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="Fog City Bike Tours"></a>
+            <ul class="nav-links">
+                <li><a href="self-guided.html">Self-Guided Tours</a></li>
+                <li><a href="tours.html">Guided Tours</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+            <a href="booking.html" class="book-now-btn">Book Now - 10% Off!</a>
+        </div>
     </nav>
 
     <!-- Hero Section -->
     <header>
-        <h1>Welcome to Fog City Bike Tours</h1>
-        <p>Your adventure starts here!</p>
-        <a href="booking.html" class="book-now-btn">Book Now - 10% Off!</a>
+        <div class="hero-container">
+            <h1>Welcome to Fog City Bike Tours</h1>
+            <p>Your adventure starts here!</p>
+            <a href="booking.html" class="book-now-btn">Book Now - 10% Off!</a>
+        </div>
     </header>
 
     <!-- Video Section -->
@@ -35,14 +40,20 @@
 
     <!-- Operational Hours -->
     <section class="hours">
-        <p><strong>Pick-Up Time:</strong> 8:00 AM</p>
-        <p><strong>Closing Time:</strong> 8:00 PM</p>
+        <div class="container">
+            <h2>Operational Hours</h2>
+            <p><strong>Pick-Up Time:</strong> 8:00 AM</p>
+            <p><strong>Closing Time:</strong> 8:00 PM</p>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2023 Fog City Bike Tours</p>
+        <div class="container">
+            <p>&copy; 2023 Fog City Bike Tours</p>
+        </div>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>

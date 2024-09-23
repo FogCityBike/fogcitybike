@@ -8,20 +8,29 @@ document.addEventListener('DOMContentLoaded', function () {
     function populateTimes() {
         let times = [];
 
-        if (privateTourCheckbox.checked) {
-            // Half-hour increments from 8:00 AM to 8:00 PM
-            times = generateHalfHourTimes(8, 20);
+        const isPrivate = privateTourCheckbox.checked;
+        const tour = tourType.value;
+
+        if (isPrivate) {
+            // Private Tours: Every half hour from 8 AM to 5 PM
+            times = generateHalfHourTimes(8, 17);
         } else {
-            if (tourType.value === 'ggb') {
-                times = ['10:00 AM', '1:30 PM'];
-            } else if (tourType.value === 'sosf') {
+            if (tour === 'ggb') {
+                // GGB Public Tour: 10:00 AM and 2:00 PM
+                times = ['10:00 AM', '2:00 PM'];
+            } else if (tour === 'sosf') {
+                // SoSF Public Tour: 11:00 AM
                 times = ['11:00 AM'];
-            } else if (tourType.value === 'self-guided') {
+            } else if (tour === 'self-guided') {
+                // Self-Guided Tour: 8:00 AM - 8:00 PM
                 times = ['8:00 AM - 8:00 PM'];
             }
         }
 
+        // Clear existing options
         tourTime.innerHTML = '';
+
+        // Populate new options
         times.forEach(time => {
             const option = document.createElement('option');
             option.value = time;
@@ -32,22 +41,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function generateHalfHourTimes(startHour, endHour) {
         const times = [];
-        for (let hour = startHour; hour <= endHour; hour++) {
-            ['00', '30'].forEach(min => {
-                const timeString = formatTime(hour, min);
-                times.push(timeString);
+        for (let hour = startHour; hour < endHour; hour++) {
+            ['00', '30'].forEach(minute => {
+                times.push(formatTime(hour, minute));
             });
         }
+        // Add the last time (endHour:00)
+        times.push(formatTime(endHour, '00'));
         return times;
     }
 
-    function formatTime(hour, min) {
+    function formatTime(hour, minute) {
         const ampm = hour >= 12 ? 'PM' : 'AM';
-        const formattedHour = hour % 12 || 12;
-        return `${formattedHour}:${min} ${ampm}`;
+        const formattedHour = ((hour - 1) % 12) + 1; // Converts 0-23 to 12-hour format
+        return `${formattedHour}:${minute} ${ampm}`;
     }
 
+    // Event listeners
     tourType.addEventListener('change', populateTimes);
     privateTourCheckbox.addEventListener('change', populateTimes);
+
+    // Initial population of times
     populateTimes();
 });

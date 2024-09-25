@@ -2,148 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Fog City Bike</title>
-    <!-- Google Fonts Link -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Link to Your CSS File -->
+    <title>Fog City Bike - Home</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tours.html">Bike Tours</a></li>
+            <li><a href="rentals.html">Bike Rentals</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+    </nav>
 
-    <!-- Video Background -->
-    <div class="video-background" id="video-background">
-        <video autoplay muted loop playsinline poster="images/fallback.jpg">
-            <source src="videos/background.mp4" type="video/mp4">
-            <source src="videos/background.webm" type="video/webm">
-            <p>Your browser does not support HTML5 video. Here is a <a href="videos/background.mp4">link to the video</a> instead.</p>
-        </video>
+    <!-- Banner Slider -->
+    <div class="banner-slider">
+        <img src="images/banner1.jpg" alt="Cyclists on the Golden Gate Bridge" class="active">
+        <img src="images/banner2.jpg" alt="Cyclists in Fog City">
+        <img src="images/banner3.jpg" alt="City skyline at sunset">
     </div>
 
-    <!-- Content Wrapper -->
-    <div class="content-wrapper">
-        <!-- Header with Logo and Navigation -->
-        <header>
-            <div class="logo">
-                <img src="images/logo.jpg" alt="Fog City Bike Logo">
-            </div>
-            <div class="slogan">
-                <p>Your Adventure Awaits</p>
-            </div>
-            <nav aria-label="Main navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="rentals.html">Self-Guided Tours</a></li>
-                    <li><a href="tours.html">Guided Tours</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+    <!-- Headline Section -->
+    <section class="headline">
+        <h1>Explore San Francisco on Two Wheels with Fog City Bike</h1>
+        <p>Experience the beauty and charm of San Francisco like never before.</p>
+        <a href="tours.html" class="button">Book a Tour</a>
+        <a href="rentals.html" class="button">Rent a Bike</a>
+    </section>
 
-        <!-- Main Content -->
-        <main>
-            <!-- Bike Options Section -->
-            <section id="bikes" class="container">
-                <h2>Our Bike Selection</h2>
-                <p>Choose from our premium selection of bikes for your adventure.</p>
-                <div class="bike-options">
-                    <!-- Road Bike -->
-                    <div class="bike-item">
-                        <img src="images/road-bike.jpg" alt="Road Bike">
-                        <h3>Road Bike</h3>
-                        <p>Experience the thrill of speed with our lightweight road bikes.</p>
-                        <p><strong>$98</strong> per day</p>
-                    </div>
-                    <!-- Carbon and Aluminum Bikes -->
-                    <div class="bike-item">
-                        <img src="images/carbon-aluminum-bike.jpg" alt="Carbon and Aluminum Bike">
-                        <h3>Carbon & Aluminum Bikes</h3>
-                        <p>Enjoy a smooth ride with our premium carbon and aluminum bikes.</p>
-                        <p><strong>$78</strong> per day</p>
-                    </div>
-                    <!-- E-Bike -->
-                    <div class="bike-item">
-                        <img src="images/ebike.jpg" alt="E-Bike">
-                        <h3>E-Bike</h3>
-                        <p>Go further with ease on our electric bikes.</p>
-                        <p><strong>$48</strong> for 2 hours, <strong>$78</strong> for the day</p>
-                    </div>
-                    <!-- Kids Bike -->
-                    <div class="bike-item">
-                        <img src="images/kids-bike.jpg" alt="Kids Bike">
-                        <h3>Kids Bike</h3>
-                        <p>Perfect bikes for the little adventurers.</p>
-                        <p><strong>$18</strong> for the day</p>
-                    </div>
-                </div>
-            </section>
+    <!-- Featured Tours -->
+    <section class="featured-tours">
+        <h2>Featured Tours</h2>
+        <div class="tour">
+            <img src="images/golden_gate_tour.jpg" alt="Golden Gate Bridge Tour">
+            <h3>Golden Gate Bridge Tour</h3>
+            <p>Ride across the iconic Golden Gate Bridge to Sausalito.</p>
+            <a href="tour-details.html?tour=golden-gate-bridge-tour" class="button">Learn More</a>
+        </div>
+        <div class="tour">
+            <img src="images/streets_of_san_francisco_tour.jpg" alt="Streets of San Francisco Tour">
+            <h3>Streets of San Francisco Tour</h3>
+            <p>Explore the city's famous neighborhoods and landmarks.</p>
+            <a href="tour-details.html?tour=streets-of-san-francisco" class="button">Learn More</a>
+        </div>
+        <div class="tour">
+            <img src="images/advanced_mountain_bike_tour.jpg" alt="Advanced Mountain Bike Tour">
+            <h3>Advanced Mountain Bike Tour</h3>
+            <p>Challenge yourself on rugged trails with stunning views.</p>
+            <a href="tour-details.html?tour=advanced-mountain-bike" class="button">Learn More</a>
+        </div>
+    </section>
 
-            <!-- Guided Tours Section -->
-            <section id="tours" class="container">
-                <h2>Exclusive Guided Tours</h2>
-                <p>Join our expert local guides for an unforgettable journey through San Francisco's most breathtaking sights.</p>
-                <div class="tour-options">
-                    <div class="tour-item">
-                        <img src="images/goldengate-tour.jpg" alt="Golden Gate Bridge to Sausalito Tour">
-                        <h3>Golden Gate Bridge to Sausalito</h3>
-                        <p>Ride across the iconic Golden Gate Bridge and explore the charming town of Sausalito.</p>
-                        <p>City Bike: <strong>$68</strong></p>
-                        <p>E-Bike: <strong>$98</strong></p>
-                        <p>Kids Bike: <strong>$38</strong></p>
-                    </div>
-                    <div class="tour-item">
-                        <img src="images/streets-sf-tour.jpg" alt="Streets of San Francisco Tour">
-                        <h3>Streets of San Francisco</h3>
-                        <p>Discover the city's vibrant neighborhoods and hidden treasures.</p>
-                        <p>E-Bike Only: <strong>$108</strong></p>
-                    </div>
-                    <!-- Private Tours -->
-                    <div class="tour-item">
-                        <img src="images/private-tour.jpg" alt="Private Tour">
-                        <h3>Private Tours</h3>
-                        <p>Enjoy a personalized experience with our private tour options.</p>
-                        <p>Contact us for pricing and availability.</p>
-                    </div>
-                </div>
-            </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Fog City Bike. All rights reserved.</p>
+    </footer>
 
-            <!-- Booking Section -->
-            <section id="booking" class="container">
-                <h2>Book Your Adventure</h2>
-                <form action="php/process-booking.php" method="POST" class="booking-form">
-                    <label for="tour-type">Select Tour:</label>
-                    <select name="tour_type" id="tour-type" required>
-                        <option value="ggb">Golden Gate Bridge Tour</option>
-                        <option value="sosf">Streets of San Francisco Tour</option>
-                        <option value="self-guided">Self-Guided Tour</option>
-                    </select>
-
-                    <label for="private-tour">Private Tour:</label>
-                    <input type="checkbox" name="private_tour" id="private-tour">
-
-                    <label for="tour-date">Select Date:</label>
-                    <input type="date" name="tour_date" id="tour-date" required>
-
-                    <label for="tour-time">Select Time:</label>
-                    <select name="tour_time" id="tour-time" required>
-                        <!-- Options will be populated by JavaScript -->
-                    </select>
-
-                    <label for="num-people">Number of People:</label>
-                    <input type="number" name="num_people" id="num-people" min="1" required>
-
-                    <button type="submit">Confirm Booking</button>
-                </form>
-            </section>
-        </main>
-
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2024 Fog City Bike | <a href="privacy-policy.html">Privacy Policy</a></p>
-        </footer>
-    </div>
-
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
 </body>
 </html>

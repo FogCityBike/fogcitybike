@@ -2,39 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Guided Tours - Fog City Bike Tours</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Fog City Bike - Bike Tours</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
     <!-- Navigation Bar -->
     <nav>
         <!-- Same as in index.html -->
     </nav>
-
-    <h1>Guided Tours</h1>
-
-    <section class="tours">
-        <div class="tour">
-            <h2>Golden Gate Bridge Tour</h2>
-            <p>Departures at 10:00 AM and 1:30 PM.</p>
-            <p>Experience the iconic Golden Gate Bridge with our expert guides.</p>
-            <a href="booking.html" class="book-now-btn">Book Now - 10% Off!</a>
+<!-- Embedded Video -->
+        <div class="video-container">
+            <video controls>
+                <source src="videos/tours.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
-
+    <!-- Page Content -->
+    <section class="tours-list">
+        <h1>Bike Tours</h1>
         <div class="tour">
-            <h2>Streets of San Francisco Tour</h2>
-            <p>Departure at 11:00 AM.</p>
-            <p>Discover the vibrant streets of San Francisco.</p>
-            <a href="booking.html" class="book-now-btn">Book Now - 10% Off!</a>
+            <img src="images/golden_gate_bridge_tour.jpg" alt="Golden Gate Bridge Tour">
+            <h3>Golden Gate Bridge Tour</h3>
+            <p>Ride across the iconic Golden Gate Bridge to Sausalito.</p>
+            <a href="tour-details.html?tour=golden-gate-bridge-tour" class="button">Learn More</a>
         </div>
+        <div class="tour">
+            <img src="images/streets_of_san_francisco_tour.jpg" alt="Streets of San Francisco Tour">
+            <h3>Streets of San Francisco Tour</h3>
+            <p>Explore the city's famous neighborhoods and landmarks.</p>
+            <a href="tour-details.html?tour=streets-of-san-francisco" class="button">Learn More</a>
+        </div>
+        <!-- Add more tours as needed -->
     </section>
 
     <!-- Footer -->
     <footer>
         <!-- Same as in index.html -->
     </footer>
-
-    <script src="js/script.js"></script>
 </body>
 </html>

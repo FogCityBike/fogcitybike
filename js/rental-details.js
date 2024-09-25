@@ -7,24 +7,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Bike data
     const bikes = {
-        'standard': {
-            title: 'Standard Bike',
-            image: 'images/standard_bike.jpg',
-            description: 'Perfect for casual rides around the city.',
-            price: '$20 per day'
+        'comfort-bike': {
+            title: 'Comfort Bike',
+            image: 'images/comfort_bike.jpg',
+            description: 'Ideal for city cruising and casual rides.',
+            price: '$32 per day'
         },
-        'electric': {
-            title: 'Electric Bike',
-            image: 'images/electric_bike.jpg',
-            description: 'Get a boost with our eco-friendly e-bikes.',
-            price: '$35 per day'
+        'hybrid-bike': {
+            title: 'Hybrid Bike',
+            image: 'images/hybrid_bike.jpg',
+            description: 'A versatile bike suitable for various terrains.',
+            price: '$36 per day'
         },
-        'kids': {
-            title: 'Kids Bike',
-            image: 'images/kids_bike.jpg',
-            description: 'Fun and safe bikes for young riders.',
-            price: '$15 per day'
-        }
+        // Add more bikes as needed
     };
 
     const bike = bikes[bikeParam];
@@ -35,9 +30,9 @@ document.addEventListener('DOMContentLoaded', function() {
             <img src="${bike.image}" alt="${bike.title}">
             <p>${bike.description}</p>
             <p><strong>Price:</strong> ${bike.price}</p>
-            <h3>Select Rental Details:</h3>
+            <h3>Select Rental Options:</h3>
             <form id="rental-form">
-                <label for="rental-date">Date:</label>
+                <label for="rental-date">Start Date:</label>
                 <input type="date" id="rental-date" name="rental-date" required>
                 <label for="rental-duration">Duration (days):</label>
                 <input type="number" id="rental-duration" name="rental-duration" min="1" max="14" value="1" required>

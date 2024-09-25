@@ -7,30 +7,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Tour data
     const tours = {
-        'golden-gate': {
-            title: 'Golden Gate Adventure Tour',
-            image: 'images/golden_gate_tour.jpg',
-            description: 'Discover the iconic Golden Gate Bridge and Sunny Sausalito on this guided tour.',
+        'golden-gate-bridge-tour': {
+            title: 'Golden Gate Bridge Tour',
+            image: 'images/golden_gate_bridge_tour.jpg',
+            description: 'Ride across the iconic Golden Gate Bridge to Sausalito. Enjoy stunning views of the bay and city skyline.',
             duration: '3 hours',
-            price: '$65 per person',
+            price: '$55 per person',
             times: ['9:00 AM', '1:00 PM', '4:00 PM']
         },
-        'muir-woods': {
-            title: 'Muir Woods Coastline Ride',
-            image: 'images/muir_woods_tour.jpg',
-            description: 'Ride over the Golden Gate Bridge and up Mt. Tam and visit breathtaking Redwood groves with ocean views.',
-            duration: '5 hours',
-            price: '$85 per person',
-            times: ['8:00 AM', '12:00 PM']
+        'streets-of-san-francisco': {
+            title: 'Streets of San Francisco Tour',
+            image: 'images/streets_of_san_francisco_tour.jpg',
+            description: 'Explore the city\'s famous neighborhoods, including Chinatown, North Beach, and the Mission District.',
+            duration: '4 hours',
+            price: '$65 per person',
+            times: ['10:00 AM', '2:00 PM']
         },
-        'sunset': {
-            title: 'San Francisco Sunset Tour',
-            image: 'images/sunset_tour.jpg',
-            description: 'Experience the sun setting over the Pacific from the Golden Gate Bridge.',
-            duration: '2 hours',
-            price: '$55 per person',
-            times: ['6:00 PM']
+        'advanced-mountain-bike': {
+            title: 'Advanced Mountain Bike Tour',
+            image: 'images/advanced_mountain_bike_tour.jpg',
+            description: 'Challenge yourself on rugged trails with stunning views of the Pacific Ocean.',
+            duration: '5 hours',
+            price: '$75 per person',
+            times: ['8:00 AM']
         }
+        // Add more tours as needed
     };
 
     const tour = tours[tourParam];

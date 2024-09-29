@@ -2,66 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Fog City Bike - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fog City Bike Rentals & Tours</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
+
     <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tours.html">Bike Tours</a></li>
-            <li><a href="rentals.html">Bike Rentals</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="faqs.html">FAQs</a></li>
-        </ul>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">Fog City Bike</a>
+            <div class="navbar-menu">
+                <a href="#tours" class="nav-link">Tours</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
     </nav>
 
-    <!-- Banner Slider -->
-    <div class="banner-slider">
-        <img src="images/banner1.jpg" alt="Cyclists on the Golden Gate Bridge" class="active">
-        <img src="images/banner2.jpg" alt="Cyclists in Fog City">
-        <img src="images/banner3.jpg" alt="City skyline at sunset">
-    </div>
-
-    <!-- Headline Section -->
-    <section class="headline">
-        <h1>Explore San Francisco on Two Wheels with Fog City Bike</h1>
-        <p>Experience the beauty and charm of San Francisco like never before.</p>
-        <a href="tours.html" class="button">Book a Tour</a>
-        <a href="rentals.html" class="button">Rent a Bike</a>
-    </section>
-
-    <!-- Featured Tours -->
-    <section class="featured-tours">
-        <h2>Featured Tours</h2>
-        <div class="tour">
-            <img src="images/golden_gate_tour.jpg" alt="Golden Gate Bridge Tour">
-            <h3>Golden Gate Bridge Tour</h3>
-            <p>Ride across the iconic Golden Gate Bridge to Sausalito.</p>
-            <a href="tour-details.html?tour=golden-gate-bridge-tour" class="button">Learn More</a>
-        </div>
-        <div class="tour">
-            <img src="images/streets_of_san_francisco_tour.jpg" alt="Streets of San Francisco Tour">
-            <h3>Streets of San Francisco Tour</h3>
-            <p>Explore the city's famous neighborhoods and landmarks.</p>
-            <a href="tour-details.html?tour=streets-of-san-francisco" class="button">Learn More</a>
-        </div>
-        <div class="tour">
-            <img src="images/advanced_mountain_bike_tour.jpg" alt="Advanced Mountain Bike Tour">
-            <h3>Advanced Mountain Bike Tour</h3>
-            <p>Challenge yourself on rugged trails with stunning views.</p>
-            <a href="tour-details.html?tour=advanced-mountain-bike" class="button">Learn More</a>
+    <!-- Hero Section with Video Background -->
+    <section class="hero">
+        <video autoplay muted loop id="heroVideo">
+            <source src="assets/videos/hero-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1>Explore San Francisco on Wheels</h1>
+            <p>Your Adventure Awaits!</p>
+            <a href="#tours" class="btn-custom">View Tours</a>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Tours Section -->
+    <section id="tours" class="tour-section">
+        <h2>Our Tours</h2>
+        <div class="tour-container">
+            <div class="tour-card">
+                <img src="assets/images/tour1.jpg" alt="Golden Gate Tour">
+                <h3>Golden Gate Bridge Tour</h3>
+                <p>Ride across the iconic Golden Gate Bridge and explore Sausalito.</p>
+                <p class="price">$68</p>
+            </div>
+            <div class="tour-card">
+                <img src="assets/images/tour2.jpg" alt="City Tour">
+                <h3>San Francisco Streets Tour</h3>
+                <p>Discover the hidden gems of the city on this amazing ride.</p>
+                <p class="price">$108</p>
+            </div>
+            <div class="tour-card">
+                <img src="assets/images/tour3.jpg" alt="Wine Tour">
+                <h3>Wine Country Tour</h3>
+                <p>Enjoy scenic views and delightful wines on this full-day trip.</p>
+                <p class="price">$138</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Slogan Section -->
+    <section class="slogan-section">
+        <p class="slogan" id="slogan">Experience Adventure Like Never Before</p>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2023 Fog City Bike. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 Fog City Bike Rentals & Tours. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="js/scripts.js"></script>
 </body>
 </html>
